@@ -1,2 +1,1 @@
-const sum = (a, b) => a + b;
-exports.sum = sum;
+export { default as Watermark } from "./components/Watermark.tsx";

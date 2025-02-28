@@ -1,10 +1,14 @@
 {
-  "name": "test-package",
-  "version": "1.0.0",
-  "main": "index.js",
+  "name": "test-package-init-pubpubpublish",
+  "version": "1.0.2",
+  "main": "src/index.js",
+  "files": [
+    "src",
+    "scripts"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "node src/scripts/createFolder.js"
+    "postinstall": "node scripts/install.js"
   },
   "keywords": [],
   "author": "",
@@ -12,7 +16,10 @@
   "description": "",
   "dependencies": {
     "fs-extra": "^11.3.0",
+    "mkdirp": "^3.0.1",
+    "ncp": "^2.0.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "typescript": "^5.7.3"
   }
 }
